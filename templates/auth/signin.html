@@ -1,0 +1,26 @@
+
+<ion-view view-title="登录" class="">
+    <ion-nav-buttons side="primary">
+
+    </ion-nav-buttons>
+    <ion-content>
+        <div class="text-center">
+            <h4 class="top ">
+                <img src="img/logo.png" alt=""/>
+            </h4>
+        </div>
+        <div class="list list-inset" ng-controller="Login">
+            <label class="item item-input">
+                <input type="text" placeholder="用户名" ng-model="phone">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="密码" ng-model="password">
+            </label>
+            <div class="padding-top text-center">
+                <button class="button button-positive activated" ng-click="signin()">登录</button>
+                <a href="" ui-sref="register" style="line-height: 3em;">没账户？赶紧注册</a>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
+
